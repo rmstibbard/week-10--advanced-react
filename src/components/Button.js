@@ -2,37 +2,31 @@ import React, { Component } from "react";
 
 class Button extends Component {
     constructor(props) {
-
         super(props);
 
         this.state = {
-            count: 0,
+            clicks: 0,
         };
 
-        this.handleUpdate = this.handleUpdate.bind(this);
-
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    handleUpdate() {
-        // destructure props to get the handleSubmit function
-        // this must be passed in from the parent
-        let { handleSubmit } = this.props;
+    handleClick() {
+        const { clicks } = this.state;
+        let count = clicks + 1;
 
-        // now, call the passed in handleSubmit function
-        // and pass it the current value of count
-        handleSubmit(this.state.count);
+        this.setState({ clicks: count });
 
+        this.props.handleUpdate(count);
     }
 
     render() {
-        let { count } = this.state;
-
         return (
-            <button onClick={this.handleUpdate}>Submit</button>
+            <>
+                <button onClick={this.handleClick}>Click Me!</button>
+            </>
         );
-
     }
-
 }
 
 export default Button;
