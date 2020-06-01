@@ -14,15 +14,21 @@ class Button extends Component {
     }
 
     handleUpdate() {
-        this.setState({ count: this.state.count + 1 });
-        console.log(this.state.count);
+        // destructure props to get the handleSubmit function
+        // this must be passed in from the parent
+        let { handleSubmit } = this.props;
+
+        // now, call the passed in handleSubmit function
+        // and pass it the current value of count
+        handleSubmit(this.state.count);
+
     }
 
     render() {
         let { count } = this.state;
 
         return (
-            <button className="btn btn-primary" onClick={this.handleUpdate}>Click me!</button>
+            <button onClick={this.handleUpdate}>Submit</button>
         );
 
     }
