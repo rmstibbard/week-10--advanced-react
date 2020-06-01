@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; import './App.css';
 import Squares from './components/Squares';
-import './App.css';
+import SignUp from './components/SignUp';
 
 function App() {
   return (
     <>
       <h1>Squares</h1>
-      <Squares colour={"red"} />
+      <Squares colour="hotpink" />
+
+      <h1>Password</h1>
+      <SignUp minimumLength={4} />
     </>
   );
 }
