@@ -17,7 +17,7 @@ class Signup extends Component {
         const valid = (password === confirm) && (password.length > minimumLength);
 
         return (
-            <form class="form-group">
+            <form className="form-group">
                 <Password
                     label="Password: "
                     value={this.state.password}
