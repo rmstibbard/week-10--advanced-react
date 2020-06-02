@@ -1,4 +1,5 @@
-import React, { Component } from 'react'; import './App.css';
+import React from 'react'; import './App.css';
+
 import Squares from './components/Squares';
 import SignUp from './components/SignUp';
 import Button from './components/Button';
@@ -7,6 +8,7 @@ import FormSeparate from './components/FormSeparate';
 
 function App() {
   return (
+
     <>
       <h1>Squares</h1>
       <Squares colour="hotpink" />
@@ -20,7 +22,7 @@ function App() {
       <h1>Form</h1>
       <Form handleSubmit={console.log} />
 
-      <h1>Form - Separate components</h1>
+      <h1>Form - Separate components - Not done yet</h1>
       <FormSeparate
         handleSubmit={console.log}
         fields={[
@@ -29,9 +31,12 @@ function App() {
           { label: "Telephone Number", name: "telephone", type: "tel" },
           { label: "Date of Birth", name: "dob", type: "date" },
         ]}
+
       />
 
     </>
+
+
   );
 }
 

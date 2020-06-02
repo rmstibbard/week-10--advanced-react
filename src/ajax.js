@@ -2,7 +2,7 @@
 import axios from "./axios";
 
 // make the request
-let promise = axios.get("/articles");
+//let promise = axios.get("/articles");
 
 // axios.post("/articles", {
 //     title: "The next debate continues",
@@ -40,6 +40,6 @@ let promise = axios.get("/articles");
 // }).then(({ data }) => console.log(data.data.id));
 
 
-axios.get("/articles/12/comments").then(({ data }) => console.log(data.data));
+//axios.get("/articles/12/comments").then(({ data }) => console.log(data.data));
 
-axios.get("/tags").then(({ data }) => console.log(data.data));
+// axios.get("/tags").then(({ data }) => console.log(data.data));
