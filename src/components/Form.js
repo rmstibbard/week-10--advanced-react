@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Password from './Password';
-
 class Form extends Component {
 
     constructor(props) {
