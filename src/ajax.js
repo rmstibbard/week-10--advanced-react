@@ -42,4 +42,4 @@ let promise = axios.get("/articles");
 
 axios.get("/articles/12/comments").then(({ data }) => console.log(data.data));
 
-// axios.get("/tags").then(({ data }) => console.log(data.data));
+axios.get("/tags").then(({ data }) => console.log(data.data));
