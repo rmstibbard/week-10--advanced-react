@@ -19,13 +19,14 @@ class Signup extends Component {
         return (
             <form className="form-group">
                 <Password
+                    className="form-control"
                     label="Password: "
                     value={this.state.password}
                     handleChange={(e) => this.setState({ password: e.currentTarget.value })}
                     valid={valid}
                 />
                 <Password
-                    class="form-control"
+                    className="form-control"
                     label="Confirm password: "
                     value={this.state.confirm}
                     handleChange={(e) => this.setState({ confirm: e.currentTarget.value })}

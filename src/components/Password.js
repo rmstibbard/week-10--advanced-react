@@ -7,7 +7,7 @@ const style = {
 const Password = ({ label, handleChange, minimumLength, value, valid }) => (
     <div className="form-group">
         <label
-            className="col-sm-2 col-form-label"
+            className="col-sm-2 col-form-label control-label"
             htmlFor={label}>{label}
             <input
                 type="password"
