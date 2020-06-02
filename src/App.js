@@ -2,6 +2,8 @@ import React, { Component } from 'react'; import './App.css';
 import Squares from './components/Squares';
 import SignUp from './components/SignUp';
 import Button from './components/Button';
+import Form from './components/Form';
+
 
 function App() {
   return (
@@ -14,6 +16,11 @@ function App() {
 
       <h1>Button</h1>
       <Button handleUpdate={console.log} />
+
+      <h1>Form</h1>
+      <Form handleSubmit={console.log} />
+
+
     </>
   );
 }

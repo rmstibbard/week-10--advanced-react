@@ -17,9 +17,7 @@ class Button extends Component {
 
         this.setState({ clicks: count });
 
-        this.props.handleUpdate(count); /* PASSES THE VALUE OF 'COUNT' (and any other parameters) 
-                                           BACK UP TO THE PARENT
-                                           Can have any name as long as it matches name in App.js */
+        this.props.handleUpdate(count); /* PASSES THE VALUE OF 'COUNT' (and any other parameters) BACK UP TO THE PARENT */
     }
 
     render() {

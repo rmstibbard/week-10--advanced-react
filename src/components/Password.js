@@ -10,7 +10,7 @@ const style2 = {
     outline: "none"
 };
 
-const Password = ({ label, handleChange, minimumLength, value, valid }) => (
+const Password = ({ label, handleChange, value, valid }) => (
     <div className="form-group">
         <label
             className="col-sm-2 col-form-label control-label"
