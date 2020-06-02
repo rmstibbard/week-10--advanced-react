@@ -13,7 +13,7 @@ function App() {
       <SignUp minimumLength={4} />
 
       <h1>Button</h1>
-      <Button countTheClicks={console.log} />
+      <Button handleUpdate={console.log} />
     </>
   );
 }

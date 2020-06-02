@@ -1,7 +1,13 @@
 import React from "react";
 
-const style = {
-    border: "2px solid red"
+const style1 = {
+    border: "2px solid green",
+    outline: "none"
+};
+
+const style2 = {
+    border: "2px solid red",
+    outline: "none"
 };
 
 const Password = ({ label, handleChange, minimumLength, value, valid }) => (
@@ -15,7 +21,7 @@ const Password = ({ label, handleChange, minimumLength, value, valid }) => (
                 name={label}
                 value={value}
                 onChange={handleChange}
-                style={!valid ? style : null}
+                style={valid ? style1 : style2}
             />
         </label>
     </div>
